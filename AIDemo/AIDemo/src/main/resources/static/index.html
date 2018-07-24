@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+ 
+<html>
+<head>
+      <title>Merrill Corporation</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://www.merrillcorp.com/images/favicon.ico" rel="icon" type="image/ico">
+
+    <link rel="stylesheet" href="search.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!--<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" />-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://www.jqueryscript.net/demo/Minimalist-Tag-Cloud-Generator-with-jQuery-tagcloud-js/jquery.tagcloud.js"></script>
+    <script src="usualSlider.js"></script>
+    <script src="getrequest.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <div id="postdiv">
+        <h1>DATASITEONE - Image Search</h1>
+        <form class="form-wrapper">
+            <!--<label>Search Tag</label>
+            <input type="text" id="tag" class="form-control"/>-->
+            <input type="text" id="search" placeholder="Search for..." required>
+            <input type="submit" value="go" id="submit">
+
+        </form>
+
+
+    </div>
+    <div id="postResultDiv">
+    </div>
+    <br/>
+    <div id="tagcloud">
+        <a href="#" rel='1'>person</a>
+        <a href="#" rel='2'>bicycle</a>
+        <a href="#" rel='3'>car</a>
+        <a href="#" rel='4'>motorcycle</a>
+        <a href="#" rel='5'>airplane</a>
+        <a href="#" rel='6'>bus</a>
+        <a href="#" rel='7'>train</a>
+        <a href="#" rel='8'>truck</a>
+        <a href="#" rel='9'>boat</a>
+        <a href="#" rel='10'>traffic light</a>
+        <a href="#" rel='11'>fire hydrant</a>
+        <a href="#" rel='12'>stop_sign</a>
+        <a href="#" rel='13'>parking meter</a>
+        <a href="#" rel='14'>bench</a>
+        <a href="#" rel='15'>bird</a>
+        <a href="#" rel='16'>cat</a>
+        <a href="#" rel='17'>dog</a>
+        <a href="#" rel='18'>horse</a>
+        <a href="#" rel='19'>sheep</a>
+        <a href="#" rel='20'>cow</a>
+        <a href="#" rel='21'>elephant</a>
+        <a href="#" rel='22'>bear</a>
+        <a href="#" rel='23'>zebra</a>
+        <a href="#" rel='24'>giraffe</a>
+        <a href="#" rel='25'>backpack</a>
+        <a href="#" rel='26'>umbrella</a>
+        <a href="#" rel='27'>handbag</a>
+        <a href="#" rel='28'>tie</a>
+        <a href="#" rel='29'>suitcase</a>
+        <a href="#" rel='30'>frisbee</a>
+        <a href="#" rel='31'>skis</a>
+        <a href="#" rel='32'>snowboard</a>
+        <a href="#" rel='33'>sports ball</a>
+        <a href="#" rel='34'>kite</a>
+        <a href="#" rel='35'>baseball bat</a>
+        <a href="#" rel='36'>baseball glove</a>
+        <a href="#" rel='37'>skateboard</a>
+        <a href="#" rel='38'>surfboard</a>
+        <a href="#" rel='39'>tennis racket</a>
+        <a href="#" rel='40'>bottle</a>
+        <a href="#" rel='41'>wine glass</a>
+        <a href="#" rel='42'>cup</a>
+        <a href="#" rel='43'>fork</a>
+        <a href="#" rel='44'>knife</a>
+        <a href="#" rel='45'>spoon</a>
+        <a href="#" rel='46'>bowl</a>
+        <a href="#" rel='47'>banana</a>
+        <a href="#" rel='48'>apple</a>
+        <a href="#" rel='49'>sandwich</a>
+        <a href="#" rel='50'>orange</a>
+        <a href="#" rel='51'>broccoli</a>
+        <a href="#" rel='52'>carrot</a>
+        <a href="#" rel='53'>hot dog</a>
+        <a href="#" rel='54'>pizza</a>
+        <a href="#" rel='55'>donot</a>
+        <a href="#" rel='56'>cake</a>
+        <a href="#" rel='57'>chair</a>
+        <a href="#" rel='58'>couch</a>
+        <a href="#" rel='59'>potted plant</a>
+        <a href="#" rel='60'>bed</a>
+        <a href="#" rel='61'>dining table</a>
+        <a href="#" rel='62'>toilet</a>
+        <a href="#" rel='63'>tv</a>
+        <a href="#" rel='64'>laptop</a>
+        <a href="#" rel='65'>mouse</a>
+        <a href="#" rel='66'>remote</a>
+        <a href="#" rel='67'>keyboard</a>
+        <a href="#" rel='68'>cell phone</a>
+        <a href="#" rel='69'>microwave</a>
+        <a href="#" rel='70'>oven</a>
+        <a href="#" rel='71'>toaster</a>
+        <a href="#" rel='72'>sink</a>
+        <a href="#" rel='73'>refrigerator</a>
+        <a href="#" rel='74'>book</a>
+        <a href="#" rel='75'>clock</a>
+        <a href="#" rel='76'>vase</a>
+        <a href="#" rel='77'>scissors</a>
+        <a href="#" rel='78'>teddy bear</a>
+        <a href="#" rel='79'>hair dryer</a>
+        <a href="#" rel='80'>toothbrush.</a>
+    </div>
+    <!--<div id="getdiv">
+        <button id="getBtn" >Get All Object Details</button>
+    </div>-->
+    <div id="getResultDiv">
+        <div id="divImages"></div>
+
+    	<ul class="list-group">
+    	</ul>
+    </div>
+     
+</div>
+<div id="dialog" title="Image Object Details">
+</div>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+info:
+  description: "Service for AI"
+
+spring:
+  application:
+    name: ai-service
+
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/AI
+
+security:
+  basic:
+    enabled: false
+
+server:
+  port: 9095
